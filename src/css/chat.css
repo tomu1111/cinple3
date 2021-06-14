@@ -1,0 +1,35 @@
+.title{
+ font-size: 15px;
+ color: white;
+ background-color:#231F77 ; 
+}
+.comm{
+    width: 100％;
+    color: white;
+    border: solid;
+}
+.btn {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    
+}
+.form-control1{
+    background-color: #28282E;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border: solid;
+    border-color: white;
+}
+body{
+    background-color: #28282E;
+}
+#chatLogs{
+    color: white;
+}
+footer{
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}

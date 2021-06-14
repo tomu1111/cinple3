@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roommake</title>
+</head>
+<body>
+    <h1>部屋作成</h1>
+    <p>タイトル</p>
+    <input type="text" placeholder="title" id="roomtitle">
+    <p>映画選択</p> 
+     <select name="" id="">ここに動画infotable一覧</select>
+    <p>時間</p>
+    <input type="datetime-local">
+    <script>
+        const data = {
+        "title" : タイトルに記入したもの,
+        "cinema-title" : 映画選択で選んだタイトル,
+        "cinemacinema img" : 映画選択で選んだもの,
+        "cinemaurl" : 映画選択で選んだもの,
+        "start time" : スタートタイム
+    };
+         await fetch(
+            "https://u1him9447i.execute-api.ap-northeast-1.amazonaws.com/dev",
+            {
+                method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify(data)
+            });
+            //時刻になったらmsg送信→
+    </script>
+</body>
+</html>
