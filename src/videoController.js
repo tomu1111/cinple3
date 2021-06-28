@@ -15,7 +15,7 @@ ipcRenderer.on('video_info', async (event, arg) => {
 
     //この映画のコメントを取得
     const response = await fetch(
-        "https://u1him9447i.execute-api.ap-northeast-1.amazonaws.com/dev?video_id=" + state.videoInfo.video_id,
+        "" + state.videoInfo.video_id,
         {
             method: 'GET', // *GET, POST, PUT, DELETE, etc.
         });
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         };
 　　　　　//awsに送る
         await fetch(
-            "https://u1him9447i.execute-api.ap-northeast-1.amazonaws.com/dev",
+            "",
             {
                 method: 'POST', // *GET, POST, PUT, DELETE, etc.
                 headers: {
