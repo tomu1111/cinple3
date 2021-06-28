@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     //動画情報の取得とDOMの作成
     const response = await fetch(
-        "https://561pfqgqp1.execute-api.ap-northeast-1.amazonaws.com/dev",
+        "",
         {
             method: 'GET', // *GET, POST, PUT, DELETE, etc.
         });
